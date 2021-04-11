@@ -1,0 +1,11 @@
+(1) BatMap.find 에서 예외처리 안해준것 3군데
+    (try BatMap.find ~~ with _ -> BatSet.empty)
+(2) first set 찾는것에서 cnt 몇이상 되면 처리해주기
+(3) follow set 찾는 것 cnt 수정 (synch 없앰.. 무식하게 다 똑같이 통일하면 안되고 걍 worklist 맨뒤로 안보내고 걍 처리)
+
+==================================================
+hw3 하는 중에 오류발견되서
+follow_set 찾는 부분 거의 완전 바꿈
+worklist type symbol list => symbol BatSet.t 로 바꾸고
+일단 한번만 돌고 dependency 구성한다음에
+cnt 100회로 제한해서 저거 처리하는 식으로 함..
